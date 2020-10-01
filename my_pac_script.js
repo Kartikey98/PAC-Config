@@ -4,11 +4,11 @@ function FindProxyForURL(url, host) {
   var proxy_no = "DIRECT";
 // If the hostname matches, send to proxy.
 if (shExpMatch(url, "*zoho.*")){
-    return proxy_yes;
+    return proxy_no;
 }
 // DEFAULT RULE: All other traffic, send direct
 else{
-    return proxy_no;
+    return proxy_yes;
 }
 
 }
